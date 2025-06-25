@@ -112,17 +112,6 @@ The platform includes various problem types:
 - `POST /api/problems/:id/review` - Get AI code review
 - `POST /api/problems/:id/save-code` - Save user code
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Docker Support
 
@@ -138,6 +127,6 @@ docker build -t leakcode-backend .
 
 # Run the container with your .env file
 # (Make sure .env is in your project root, NOT copied into the image)
-docker run --env-file backend/.env -p 8000:8000 leakcode-backend
+docker run --env-file .env -p 8000:8000 leakcode-backend
 ```
 
